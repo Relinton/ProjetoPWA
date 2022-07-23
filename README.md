@@ -10,22 +10,22 @@ Surgido como um novo modelo de desenvolvimento de software, o Progressive Web Ap
 Vantagens
  
 
-Custo de desenvolvimento mais baixo
-Tempo de desenvolvimento menor
-Utilização de componentes da Web (HTML, CSS, JS)
-Aplicação consome pouco espaço em disco (Geralmente menos de 2MB)
-Consegue enviar notificações
-Tem acesso a alguns elementos do celular como, microfone, câmera, localização.
-Economia de bateria
+Custo de desenvolvimento mais baixo,
+Tempo de desenvolvimento menor,
+Utilização de componentes da Web (HTML, CSS, JS),
+Aplicação consome pouco espaço em disco (Geralmente menos de 2MB),
+Consegue enviar notificações,
+Tem acesso a alguns elementos do celular como, microfone, câmera, localização,
+Economia de bateria,
 Não é preciso desenvolver para diferentes sistemas, o mesmo código roda em quase todos.
  
 Desvantagens
  
 
-Não suporta todos os navegadores
-Não oferece suporte ao uso de Bluetooth
-Sem suporte a alguns dos sensores do celular
-Impossibilidade de adicionar a Loja de aplicativos
+Não suporta todos os navegadores,
+Não oferece suporte ao uso de Bluetooth,
+Sem suporte a alguns dos sensores do celular,
+Impossibilidade de adicionar a Loja de aplicativos,
 Não tem a segurança de um aplicativo mobile.
 
 ## Vídeo demonstrativo
