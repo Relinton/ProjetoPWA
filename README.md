@@ -38,7 +38,7 @@ WebEssentials.AspNetCore.PWA
 Na raiz da pasta wwwroot adicione um arquivo manifest.json que se encontra no projeto que fiz de exemplo;
 adicione também o arquivo pwabuilder-sw.js que também se encontra no projeto, lembre-se de alterar os campos desses arquivos com as informações do seu app;
 adicione a pasta ico e imagens;
-Depois de feito isto, abra a view _Layout.cshtml e a home index. deixei comentado os códigos que irão precisar para fazer funcionar o pwa.  :) 
+Depois de feito isto, abra a view _Layout.cshtml e a Index.cshtml, deixei comentado os códigos que irão precisar para fazer funcionar o pwa.  :) 
 obrigado! 
 
 
