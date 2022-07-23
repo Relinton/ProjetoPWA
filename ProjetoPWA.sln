@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoPWA", "ProjetoPWA\ProjetoPWA.csproj", "{66755C24-CA01-465D-95BE-8269DB29E828}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66755C24-CA01-465D-95BE-8269DB29E828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66755C24-CA01-465D-95BE-8269DB29E828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66755C24-CA01-465D-95BE-8269DB29E828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66755C24-CA01-465D-95BE-8269DB29E828}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {656CBA26-EFA3-458F-BBDA-E46A89C967EE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center" style="margin-bottom:100px;">
+    <img src="~/app/logopwa.png" width="500" height="300" alt="pwa" />
+</div>
+
+
+<!--Local onde o botão de instalação é para aparecer-->
+<div class="text-center m-1">
+    <pwa-install class="text-left">
+        <span class="btn bg-vermelho btn-sm text-white">
+            <span>
+                <small class="font-weight-light font-italic">Instale nosso app PWA</small>
+            </span><br>
+            <span class="font-weight-bolder h5">
+                <span class="fa fa-download"></span>
+                <span>Instalar APP</span>
+            </span>
+        </span>
+    </pwa-install>
+</div>
+
+@section Scripts {
+    @*@RenderSection("~/bundles/jqueryval")*@
+    <!--Usando esta biblioteca para criar botão inicial, nela só aceita ser na tela inicial-->
+    <script type="module" src="@("https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall")"></script>
+}

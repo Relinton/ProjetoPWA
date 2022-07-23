@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Projeto PWA</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+    <!--Referências do PWA, Ajustar para sua necessidade-->
+    <link rel="manifest" href="~/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="@ViewBag.Title - PWA">
+    <!--Coloque quantas imagens quiser duplicando essa linha de comando de icone e apontando para uma imagem existente. todas imagens quagradas de até 512x512-->
+    <link rel="apple-touch-icon" href="/Imagens/icons/icon-512x512.png">
+    <meta name="description" content="Aplicativo Web Progressivo - Projeto PWA - Encontre os melhores conceitos de pwa em um só lugar, instale o aplicativo 'Projeto PWA' e aproveite a oportunidade de utilizar uma ferramenta eficiente e interativa..">
+    <meta name="theme-color" content="#9d0000" />
+    <!--Fim Referência PWA-->
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Projeto PWA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            &copy; 2022 - Projeto PWA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+                console.log("[PWA Builder] Foi encontrado um trabalhador de serviço ativo, não é necessário se registrar");
+            } else {
+                // Registrar o trabalhador do serviço
+                navigator.serviceWorker
+                    .register("/pwabuilder-sw.js", {//tem que ser o mesmo nome do arquivo onde está o código para  funcionar offline
+                        scope: "./"
+                    })
+                    .then(function (reg) {
+                        console.log("[PWA Builder] O trabalhador do serviço foi registrado para o escopo: " + reg.scope);
+                    });
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
