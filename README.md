@@ -32,6 +32,14 @@ Não tem a segurança de um aplicativo mobile.
 [screen-capture.webm](https://user-images.githubusercontent.com/32855779/180622405-2f605ff2-8aaa-4b3f-88cc-d12041e389ff.webm)
 
 ## Criando um PWA utilizando ASP .NET Core
+Crie um Projeto Asp net core e Com o projeto já criado, precisamos adicionar a biblioteca que ajuda a tornar nossa aplicação um PWA, no projeto, em gerenciador de pacotes do NuGet adicione o seguinte pacote:
+WebEssentials.AspNetCore.PWA
+
+Na raiz da pasta wwwroot adicione um arquivo manifest.json que se encontra no projeto que fiz de exemplo;
+adicione também o arquivo pwabuilder-sw.js que também se encontra no projeto, lembre-se de alterar os campos desses arquivos com as informações do seu app;
+adicione a pasta ico e imagens;
+Depois de feito isto, abra a view _Layout.cshtml e a home index. deixei comentado os códigos que irão precisar para fazer funcionar o pwa.  :) 
+obrigado! 
 
 
 
